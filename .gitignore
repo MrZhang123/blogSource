@@ -56,3 +56,4 @@ api/config/scm_config.php
 # blog
 #
 public/
+themes/
