@@ -8,7 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/hexo deploy --generate",
-    "server": "node_modules/.bin/hexo server"
+    "server": "node_modules/.bin/hexo server",
+		"clean": "node_modules/.bin/hexo clean"
   },
   "dependencies": {
     "hexo": "^3.4.0",
