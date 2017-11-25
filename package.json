@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.4.0"
+    "version": "3.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/hexo deploy --generate",
     "server": "node_modules/.bin/hexo server",
-		"clean": "node_modules/.bin/hexo clean"
+    "clean": "node_modules/.bin/hexo clean"
   },
   "dependencies": {
     "hexo": "^3.4.2",
