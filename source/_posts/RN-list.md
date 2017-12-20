@@ -1,9 +1,9 @@
 ---
 title: RN长列表--ListView && SectionList
 date: 2017-06-11 00:10:54
-tags: React
+tags: React Native
 comments: true
-categories: "React"
+categories: "React Native"
 ---
 
 突然发现自己的博客已经从原来的几天更新一次变成了如今的一个月更新一次[捂脸]，最近这一个月实在是太忙了，上个月月初的时候，接了一个RN的项目，做一个app，那时候老大问谁感兴趣，我直接说我。其实自己对RN一直很有兴趣，但是那时候由于在看Vue，所以并没有去搞，现在刚好有个项目，正好我可以去了解一下RN。说实话，这一答应不要紧，差点儿被RN气死，以前觉得RN应该比较成熟了，经过这段时间做项目，发现RN的坑还是很多的。
