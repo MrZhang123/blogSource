@@ -97,7 +97,11 @@ chrome://inspect
 
 就可以看到安卓设备上正在运行的 webview 了，点击**inspect**就会开启一个调试页面，就可以进行 debug 了，RN 似乎默认开启了 debug 调试，直接就可以看到 webview 中输出的信息。
 
+![webview_debug](/img/rn/webview_debug.jpg)
+
 但是我发现我打开的调试界面是一个错乱的界面，不知道为什么，无奈--！
+
+![debug](/img/rn/debug.jpeg)
 
 ### 注意 ⚠️
 
