@@ -1,7 +1,7 @@
 ---
 title: 再见，2016；你好，2017
 date: 2016-12-31 23:28:51
-tags: 新年
+tags: 年终总结
 comments: true
 categories: "总结"
 ---
