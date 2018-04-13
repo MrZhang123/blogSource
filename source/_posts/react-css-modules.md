@@ -5,6 +5,8 @@ tags: React
 comments: true
 categories: "React"
 ---
+# CSS变量污染解决及CSS Modules在React中的应用
+
 由于CSS是全局的，所以在写组件的时候，经常会遇到CSS命名重复导致样式覆盖（冲突），所以我们在写CSS的时候一般会这么处理
 
 * 写复杂的class名，降低冲突的概率
@@ -189,3 +191,13 @@ export default Button
 ```
 
 具体配置可以查看[文档](https://github.com/gajus/babel-plugin-react-css-modules#babel-plugin-react-css-modules)
+
+### 参考
+
+https://github.com/webpack-contrib/css-loader 
+
+https://juanha.github.io/2017/01/10/react-css-modules/ 
+
+http://www.alloyteam.com/2017/03/getting-started-with-css-modules-and-react-in-practice/ 
+
+https://github.com/camsong/blog/issues/5
