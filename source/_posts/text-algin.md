@@ -72,10 +72,8 @@ text-align-last 属性规定如何对齐文本的最后一行。但是这里注�
 运行结果：
 ![icon](/img/result.jpg)
 
-## 2018/5/11更新
+# 2018/5/11更新
 
 >这里需要注意一个问题⚠️
 
-如果将html进行压缩（例如使用webpack把html进行压缩），将元素之间的空白节点去掉（这行），则以上两端对齐效果会消失，因为
-
-**`inline-block`本身的外在表现是行框，如果没有空白节点，多个`inline-block`紧紧挨在一起，表现可以理解为一个`letter`，`letter`是不受`text-align`影响的，`text-align`针对的是 word!**
+如果将html进行压缩（例如使用webpack把html进行压缩），将元素之间的空白节点去掉（这行），则以上两端对齐效果会消失，因为**`inline-block`本身的外在表现是行框，如果没有空白节点，多个`inline-block`紧紧挨在一起，表现可以理解为一个`letter`，`letter`是不受`text-align`影响的，`text-align`针对的是 word!**
