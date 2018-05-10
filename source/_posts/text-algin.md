@@ -6,8 +6,10 @@ comments: true
 categories: "CSS"
 ---
 最近在写页面的时候遇到了一个问题---当行文本双端对齐，大家都知道CSS属性中有一个“text-align:justify”，但是这个属性使用的时候，要求还是挺多的，尤其是要实现单行文本双端对齐。关于两端对齐，大漠和张鑫旭的博客中都有文章讲，非常不错，推荐给大家：
-[display:inline-block/text-align:justify下列表的两端对齐布局](http://www.zhangxinxu.com/wordpress/2011/03/displayinline-blocktext-alignjustify%E4%B8%8B%E5%88%97%E8%A1%A8%E7%9A%84%E4%B8%A4%E7%AB%AF%E5%AF%B9%E9%BD%90%E5%B8%83%E5%B1%80/) 
-[Text-align:Justify和RWD](http://www.w3cplus.com/css/text-align-justify-and-rwd.html) 
+
+* [display:inline-block/text-align:justify下列表的两端对齐布局](http://www.zhangxinxu.com/wordpress/2011/03/displayinline-blocktext-alignjustify%E4%B8%8B%E5%88%97%E8%A1%A8%E7%9A%84%E4%B8%A4%E7%AB%AF%E5%AF%B9%E9%BD%90%E5%B8%83%E5%B1%80/) 
+* [Text-align:Justify和RWD](http://www.w3cplus.com/css/text-align-justify-and-rwd.html) 
+
 ## text-align:justify与text-align-last:justify
 ### 1.text-align
 MDN中这样介绍到：“text-align CSS属性定义行内内容（例如文字）如何相对它的块父元素对齐。text-align并不控制块元素自己的对齐，只控制它的行内内容的对齐。”从这里可以看出，控制文本居中对齐直接写text-align:justify就可以。但是这对于多行文本（即有文本换行）除了最后一行都可以实现两端对齐，最后一行依旧左对齐。所以就需要控制最后一行文本对齐方式的CSS属性：text-align-last。
@@ -69,3 +71,11 @@ text-align-last 属性规定如何对齐文本的最后一行。但是这里注�
 ```
 运行结果：
 ![icon](/img/result.jpg)
+
+## 2018/5/11更新
+
+>这里需要注意一个问题⚠️
+
+如果将html进行压缩（例如使用webpack把html进行压缩），将元素之间的空白节点去掉（这行），则以上两端对齐效果会消失，因为
+
+**`inline-block`本身的外在表现是行框，如果没有空白节点，多个`inline-block`紧紧挨在一起，表现可以理解为一个`letter`，`letter`是不受`text-align`影响的，`text-align`针对的是 word!**
