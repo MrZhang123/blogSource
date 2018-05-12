@@ -1,9 +1,9 @@
 ---
 title: Webpack初探
 date: 2016-05-31 21:02:20
-tags: vue
+tags: webpack
 comments: true
-categories: "Vue"
+categories: "webpack"
 ---
 > 很早就听说webpack包管理工具，但是一直没有机会学习，这次又看到[掘金](http://gold.xitu.io/#/)上面有关于vue+webpack的初级文章，而且最近公司没什么事儿做，决定搞一下。在搞的过程中，虽然按照文章中写的去做，但是还是有很多问题，所以写下本文，总结下我遇到的问题以及解决办法。
 
