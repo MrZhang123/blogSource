@@ -219,6 +219,16 @@ render(
 
 这样我们就将 redux 与 react-router 整合完毕。
 
+#### 使用dispatch切换路由
+
+完成以上配置后，就可以使用`dispatch`切换路由了：
+
+```js
+import { push } from 'react-router-redux'
+// Now you can dispatch navigation actions from anywhere!
+store.dispatch(push('/about'))
+```
+
 ### react-router-config
 
 #### react-router v4 之前——静态路由
