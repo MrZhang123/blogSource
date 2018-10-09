@@ -54,7 +54,13 @@ if (document.compatMode === 'CSS1Compat') {
 
 通过上面代码可以拿到浏览器窗口（也就是 document）的宽度，这样就可以计算根元素的基准值了。
 
-假设`1rem = xpx`，这里的`x`可以是任意值，同时这里的`1rem`代表根元素字体大小。
+假设`1rem = xpx`，这里的`x`是计算得出的，这里的`1rem`代表根元素字体大小。
+
+计算rem的公式如下(rem表示基准值)
+
+```js
+rem = document.documentElement.clientWidth * dpr / 10
+``
 
 假设在宽度为720px的屏幕上，`1rem = 36px`，即720px的屏幕上根元素字体大小为`36px`，则在360px的屏幕上字体大小为`18px`，因为屏幕宽度和根元素字体大小的比值不变，是20，所以计算公式如下：
 
