@@ -47,6 +47,7 @@ React v16 之前的协调器（堆栈协调器，参见[Codebase Overview——R
 
 但是在处理该用户界面时，如果有太多的事务同时执行，可能会导致卡顿。可能还有一些事务是不需要的，因为它可能被最近的更新取代了。
 
+![](/img/react/react-news/react-fiber-old.jpeg)
 <!--React旧的事件执行图-->
 
 在最新的浏览器和 RN 实现了两个 API：
@@ -62,6 +63,7 @@ React v16 之前的协调器（堆栈协调器，参见[Codebase Overview——R
 
 使用 React Fiber 后 React 的调用情况
 
+![](/img/react/react-news/react-fiber-new.jpeg)
 <!--React Fiber调用情况图-->
 
 React 将更新分为两个时期：render/reconciliation 和 commit
