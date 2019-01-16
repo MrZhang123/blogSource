@@ -1,5 +1,5 @@
 ---
-title: 译如何使用React生命周期方法
+title: 「译」如何使用React生命周期方法
 date: 2018-07-28 13:39:28
 tags: React
 comments: true
